@@ -1,4 +1,3 @@
-
 package net.mehdi.springbatch.integration;
 
 import lombok.extern.slf4j.Slf4j;
@@ -9,7 +8,6 @@ import org.springframework.expression.common.LiteralExpression;
 import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.MessagingGateway;
 import org.springframework.integration.annotation.ServiceActivator;
-import org.springframework.integration.file.FileNameGenerator;
 import org.springframework.integration.file.remote.session.CachingSessionFactory;
 import org.springframework.integration.sftp.outbound.SftpMessageHandler;
 import org.springframework.integration.sftp.session.DefaultSftpSessionFactory;
@@ -34,7 +32,7 @@ public class IntegrationConfig {
             factory.setPassword(configuration.getPassword());
         }
 
-        return new CachingSessionFactory<>(factory,10);
+        return new CachingSessionFactory<>(factory, 10);
     }
 
     @Bean
