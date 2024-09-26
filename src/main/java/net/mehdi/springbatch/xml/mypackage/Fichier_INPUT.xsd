@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root" type="rootType"/>
+  <xs:complexType name="HeaderType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="InquiryCode"/>
+      <xs:element type="xs:string" name="ProcessCode"/>
+      <xs:element type="xs:string" name="OrganizationCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VariablesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ID" minOccurs="0"/>
+      <xs:element type="xs:string" name="Snap_shot" minOccurs="0"/>
+      <xs:element type="xs:string" name="ID_Lancement" minOccurs="0"/>
+      <xs:element type="xs:string" name="Date_Calcul" minOccurs="0"/>
+      <xs:element name="Age_Duree_Pret" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="660"/>
+            <xs:enumeration value="819"/>
+            <xs:enumeration value="866"/>
+            <xs:enumeration value="876"/>
+            <xs:enumeration value="902"/>
+            <xs:enumeration value="933"/>
+            <xs:enumeration value="882"/>
+            <xs:enumeration value="830"/>
+            <xs:enumeration value="898"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Anciennete_PM" minOccurs="0"/>
+      <xs:element name="Anciennete_PP" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="86.8008213552361"/>
+            <xs:enumeration value="60.4188911704312"/>
+            <xs:enumeration value="121.659137577002"/>
+            <xs:enumeration value="124.878850102669"/>
+            <xs:enumeration value="144.29568788501"/>
+            <xs:enumeration value="99.2197125256673"/>
+            <xs:enumeration value="373.19"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Date_Debut" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2022-01-05"/>
+            <xs:enumeration value="2023-08-05"/>
+            <xs:enumeration value="2021-04-06"/>
+            <xs:enumeration value="2022-01-06"/>
+            <xs:enumeration value="2024-03-06"/>
+            <xs:enumeration value="2023-06-05"/>
+            <xs:enumeration value="2024-02-06"/>
+            <xs:enumeration value="2022-03-05"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Date_Fin" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2027-01-04"/>
+            <xs:enumeration value="2033-08-04"/>
+            <xs:enumeration value="2025-04-05"/>
+            <xs:enumeration value="2026-01-05"/>
+            <xs:enumeration value="2028-03-05"/>
+            <xs:enumeration value="2027-12-04"/>
+            <xs:enumeration value="2024-12-05"/>
+            <xs:enumeration value="2025-03-04"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Nbr_Incidents" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="28"/>
+            <xs:enumeration value="20"/>
+            <xs:enumeration value="19"/>
+            <xs:enumeration value="24"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Taux_Apport" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5.5"/>
+            <xs:enumeration value="1.4"/>
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="40"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Categorie" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="LOA"/>
+            <xs:enumeration value="PP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CSP" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PM"/>
+            <xs:enumeration value="Retraite Bancaire"/>
+            <xs:enumeration value="Commerçant"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Type_Client" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PM"/>
+            <xs:enumeration value="PP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Code_Reglement_CG" minOccurs="0"/>
+      <xs:element type="xs:string" name="Date_Observation" minOccurs="0"/>
+      <xs:element type="xs:string" name="Encours" minOccurs="0"/>
+      <xs:element type="xs:string" name="Solde" minOccurs="0"/>
+      <xs:element name="Nb_Impaye" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Duree_Impaye" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="26"/>
+            <xs:enumeration value="25"/>
+            <xs:enumeration value="24"/>
+            <xs:enumeration value="56"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Classe_Contagion" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="SENS"/>
+            <xs:enumeration value="SAIN"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Flag_Contentieux" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="O"/>
+            <xs:enumeration value="N"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Flag_Resilia" minOccurs="0"/>
+      <xs:element type="xs:string" name="Flag_Sinistre" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OBSERVATIONType">
+    <xs:sequence>
+      <xs:element type="VariablesType" name="Variables"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CategoriesType">
+    <xs:sequence>
+      <xs:element type="OBSERVATIONType" name="OBSERVATION" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="AFFAIREType" name="AFFAIRE" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AFFAIREType">
+    <xs:sequence>
+      <xs:element type="VariablesType" name="Variables"/>
+      <xs:element type="CategoriesType" name="Categories"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CLIENTType">
+    <xs:sequence>
+      <xs:element type="VariablesType" name="Variables"/>
+      <xs:element type="CategoriesType" name="Categories"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BodyType">
+    <xs:sequence>
+      <xs:element type="CLIENTType" name="CLIENT"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StrategyOneRequestType">
+    <xs:sequence>
+      <xs:element type="HeaderType" name="Header"/>
+      <xs:element type="BodyType" name="Body"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rootType">
+    <xs:sequence>
+      <xs:element type="StrategyOneRequestType" name="StrategyOneRequest" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
